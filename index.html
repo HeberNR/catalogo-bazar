@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lanas e Hilos | Venta online en Corrientes. ¡Consultanos por WhatsApp!"
+    />
+    <meta property="og:title" content="Lhilos - Catálogo Online" />
+    <meta
+      property="og:image"
+      content="https://tusitio.com/img/logo-compartir.png"
+    />
+
+    <title>Catálogo Digital | Lhilos</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="brand">
+          <img src="img/logo.png" alt="Logo" class="logo" />
+          <h1>Lhilos</h1>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <nav class="filtro-nav" id="nav-menu">
+      <ul class="categorias">
+        <li data-categoria="all" class="active">Todas</li>
+        <li data-categoria="lanas">Lanas</li>
+        <li data-categoria="hilos">Hilos</li>
+        <li data-categoria="agujas">Agujas</li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="search-container">
+        <input type="text" id="buscador" placeholder="Buscar productos..." />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="grid" id="grid-productos"></div>
+    </main>
+
+    <footer>
+      <p><i class="fas fa-map-marker-alt"></i> Santa fe 346, Corrientes, AR</p>
+      <p><i class="fas fa-clock"></i> Lun a Sab 9 a 20hs</p>
+    </footer>
+
+    <a href="#" class="whatsapp-float" id="main-wa-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div id="modal-detalle" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <div class="modal-img">
+            <img id="modal-img-src" src="" alt="Producto" />
+          </div>
+          <div class="modal-info">
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-precio" class="precio"></p>
+            <p id="modal-descripcion"></p>
+            <a id="modal-wa-btn" class="boton-wa" href="#">
+              <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+        <hr />
+        <h3>Productos similares</h3>
+        <div id="recomendados-grid" class="grid-recomendados"></div>
+      </div>
+    </div>
+
+    <script src="/js/datos.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
